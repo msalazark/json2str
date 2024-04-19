@@ -1,0 +1,75 @@
+{
+    "name": "Transcription of Harhut TBWA IMG_0798.MOV",
+    "task": "transcribe",
+    "whisper_model": "medium",
+    "segments": [
+        {
+            "id": 9,
+            "start": 0.0,
+            "end": 0.0,
+            "text": "Speaker 1",
+            "meta": true,
+            "category": "speaker"
+        },
+        {
+            "id": 0,
+            "start": 0.0,
+            "end": 7.0,
+            "text": " 1. Cuando descubrimos c\u00f3mo las personas realmente hacen decisiones, y muy a menudo no es como creemos los marketers,"
+        },
+        {
+            "id": 1,
+            "start": 7.0,
+            "end": 10.0,
+            "text": " pero cuando descubrimos c\u00f3mo las personas realmente hacen decisiones,"
+        },
+        {
+            "id": 2,
+            "start": 10.0,
+            "end": 13.0,
+            "text": " est\u00e1s en un lugar mucho mejor para influenciar esas decisiones."
+        },
+        {
+            "id": 3,
+            "start": 13.0,
+            "end": 16.0,
+            "text": " Mi nombre es Nancy Harha y soy la autor del libro de ganas del premio,"
+        },
+        {
+            "id": 4,
+            "start": 16.0,
+            "end": 18.0,
+            "text": " Usando la Ciencia y el Marketing,"
+        },
+        {
+            "id": 5,
+            "start": 18.0,
+            "end": 24.0,
+            "text": " y estoy contenta de que Jorge te va a hablar en TBWA Peru sobre esto,"
+        },
+        {
+            "id": 6,
+            "start": 24.0,
+            "end": 29.0,
+            "text": " porque cuando descubrimos c\u00f3mo trigger los comportamientos autom\u00e1ticos que sus clientes y prospectos dependen,"
+        },
+        {
+            "id": 7,
+            "start": 29.0,
+            "end": 34.0,
+            "text": " te encontrar\u00e1s mucho m\u00e1s f\u00e1cil de incrementar la responsabilidad de la gente."
+        },
+        {
+            "id": 8,
+            "start": 34.0,
+            "end": 36.0,
+            "text": " \u00a1Adi\u00f3s a tu continuo \u00e9xito!"
+        }
+    ],
+    "audio_file_path": "Harhut TBWA IMG_0798.MOV",
+    "timeline_fps": "29.98",
+    "transcription_id": "a8ab695fa6f6aa8fadd5bd3afb46101a",
+    "incomplete": false,
+    "video_index_path": "Harhut TBWA IMG_0798.MOV.npy",
+    "last_modified": "1713305928"
+}
