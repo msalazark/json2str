@@ -1,4 +1,6 @@
+import streamlit as st
 import json
+import os
 
 def read_json_from_file(file_path):
     """Read and load JSON data from a file."""
@@ -22,19 +24,22 @@ def json_to_srt(json_data):
         srt_content.append(f"{i}\n{start_time} --> {end_time}\n{text}\n")
     return "\n".join(srt_content)
 
-# Simula el JSON que tienes
-json_file_path = 'test.json'
-json_data = read_json_from_file(json_file_path)
+def process_folder(folder_path):
+    json_files = [f for f in os.listdir(folder_path) if f.endswith('.json')]
+    for json_file in json_files:
+        json_path = os.path.join(folder_path, json_file)
+        json_data = read_json_from_file(json_path)
+        srt_output = json_to_srt(json_data)
+        output_file_path = os.path.join(folder_path, json_file.replace('.json', '.srt'))
+        with open(output_file_path, 'w') as file:
+            file.write(srt_output)
+        st.write(f"SRT file has been saved to {output_file_path}")
 
-# Genera el contenido SRT del JSON
-srt_output = json_to_srt(json_data)
-print(srt_output)
-
-
-# Ruta del archivo SRT de salida
-output_file_path = 'salida.srt'
-
-# Escribir el contenido SRT en un archivo
-with open(output_file_path, 'w') as file:
-    file.write(srt_output)
-    print(f"SRT file has been saved to {output_file_path}")
+# Streamlit UI
+st.title("JSON to SRT Converter")
+folder_path = st.text_input("Enter the path to the folder containing JSON files:")
+if st.button("Convert JSON to SRT"):
+    if folder_path:
+        process_folder(folder_path)
+    else:
+        st.write("Please enter a valid folder path.")
